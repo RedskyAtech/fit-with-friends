@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        tools:context=".fitWithFriends.ui.activities.notification.NotificationSettingsActivity">
+
+    <RelativeLayout
+            android:id="@+id/rLayout_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value_header"
+            android:background="@color/color_purple"
+            tools:ignore="UselessParent">
+
+        <RelativeLayout
+                android:id="@+id/rLayout_back_arrow"
+                android:layout_width="@dimen/value_forty"
+                android:layout_height="match_parent">
+
+            <ImageView
+                    android:layout_width="@dimen/value_twenty"
+                    android:layout_height="@dimen/value_twenty"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/back_white_arrow"/>
+
+        </RelativeLayout>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/text_notifications"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_xxxlarge"
+                tools:ignore="RelativeOverlap"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/rLayout_weight_log"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value_sixty"
+            android:layout_below="@+id/rLayout_header"
+            android:background="@color/white">
+
+        <ImageView
+                android:id="@+id/imageView_weight_log"
+                android:layout_width="@dimen/value_thirty"
+                android:layout_height="@dimen/value_thirty"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/value_ten"
+                android:src="@mipmap/notification_two"
+                android:contentDescription="@string/app_name"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/value_ten"
+                android:layout_marginEnd="@dimen/value_ten"
+                android:layout_toEndOf="@+id/imageView_weight_log"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="@string/text_allow_all_notifications"
+                android:textSize="@dimen/text_size_xlarge"
+                tools:ignore="RelativeOverlap"/>
+
+        <ToggleButton
+                android:id="@+id/toggle_all_notification"
+                android:layout_width="@dimen/value_forty_five"
+                android:layout_height="@dimen/value_thirty"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/value_ten"
+                android:background="@drawable/drawable_switch_button"
+                android:contentDescription="@string/app_name"
+                android:text=""
+                android:textColor="@color/white"
+                android:textOff=""
+                android:textOn=""
+                android:textSize="@dimen/text_size_large"/>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/value_ten"
+                android:layout_toEndOf="@+id/imageView_weight_log"
+                android:background="@color/gray"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/rLayout_edit_profile"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/rLayout_weight_log"
+            android:layout_height="@dimen/value_sixty"
+            android:background="@color/white">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageView_edit_profile"
+                android:layout_width="@dimen/value_thirty"
+                android:layout_height="@dimen/value_thirty"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/value_ten"
+                android:src="@mipmap/notification_one"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/value_ten"
+                android:layout_marginEnd="@dimen/value_ten"
+                android:layout_toEndOf="@+id/imageView_edit_profile"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="@string/text_daily_motivation_only"
+                android:textSize="@dimen/text_size_xlarge"
+                tools:ignore="RelativeOverlap"/>
+
+        <ToggleButton
+                android:id="@+id/toggle_daily_motivation"
+                android:layout_width="@dimen/value_forty_five"
+                android:layout_height="@dimen/value_thirty"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/value_ten"
+                android:background="@drawable/drawable_switch_button"
+                android:contentDescription="@string/app_name"
+                android:text=""
+                android:textColor="@color/white"
+                android:textOff=""
+                android:textOn=""
+                android:textSize="@dimen/text_size_large"/>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/value_ten"
+                android:layout_toEndOf="@+id/imageView_edit_profile"
+                android:background="@color/gray"/>
+
+    </RelativeLayout>
+
+    <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/avi_loader_noti"
+            style="@style/AVLoadingIndicatorView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            app:indicatorColor="@color/color_purple"
+            app:indicatorName="LineSpinFadeLoaderIndicator"/>
+
+</RelativeLayout>

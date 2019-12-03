@@ -1,0 +1,108 @@
+package com.fit_with_friends.fitWithFriends.utils
+
+object Constants {
+
+    //Base Url's
+    //const val BASE_URL = "http://202.164.42.227/fitwithfriends/api"
+    //const val BASE_URL_IMAGE = "http://202.164.42.227/fitwithfriends/"
+    const val BASE_URL = "http://18.208.0.68/fitwithfriends/api"
+    const val BASE_URL_IMAGE = "http://18.208.0.68/fitwithfriends/"
+
+    //Actions
+    const val REGISTER = "/register"
+    const val LOGIN = "/login"
+    const val SOCIAL_LOGIN = "/social-login"
+    const val FORGOT_PASSWORD = "/forgot-password"
+    const val CREATE_CHALLENGE = "/create-challenge"
+    const val EDIT_CHALLENGE = "/edit-challenge"
+    const val GET_ALL_CHALLENGES = "/get-all-challenges"
+    const val GET_CHALLENGES = "/get-challenge"
+    const val GET_ALL_CONNECTION = "/get-all-connection"
+    const val GET_PENDING_INVITE_LIST = "/get-pending-invite-list"
+    const val ADD_WEIGHT = "/add-weight"
+    const val DELETE_WEIGHT = "/delete-weight"
+    const val LOGOUT = "/log-out"
+    const val CHANGE_PASSWORD = "/change-password"
+    const val GET_NOTIFICATION = "/get-notifications"
+    const val GET_NOTIFICATION_COMMENT_LIST = "/notification-comment-list"
+    const val EDIT_PROFILE = "/edit-profile"
+    const val MOTIVATION_ON_OFF = "/motivation-noti-on-off"
+    const val NOTIFICATION_ON_OFF = "/notification-on-off"
+    const val DAILY_MOTIVATION = "/daily-motivation"
+    const val PRIVACY_LINK = "/privacy-link"
+    const val TERM_CONDITION = "/terms-conditions"
+    const val ABOUT_US = "/about-us"
+    const val GET_PROFILE = "/get-profile"
+    const val CHALLENGE_DETAIL = "/challenge-detail"
+    const val ACCEPT_REQUEST = "/accept-request"
+    const val DECLINE_REQUEST = "/decline-request"
+    const val INVITE_FRIEND = "/invite-friend"
+    const val SEND_REQUEST = "/send-request"
+    const val SEARCH_FRIEND = "/search-friend"
+    const val WEIGHT_LOG = "/weight-log"
+    const val WEIGHT_LOG_DETAIL = "/weight-log-detail"
+    const val NOTIFICATION_LIKE = "/notification-like"
+    const val NOTIFICATION_COMMENT = "/notification-comment"
+    const val DELETE_COMMENT = "/delete-comment"
+    const val EDIT_COMMENT = "/edit-comment"
+    const val ACCEPT_DECLINE_CHALLENGE = "/accept-decline-challenge"
+    const val CLEAR_NOTIFICATIONS_COUNT = "/clear-notifications-count"
+    const val CLEAR_SINGLE_NOTIFICATION_COUNT = "/clear-single-notifications-count"
+
+    const val USER_ID = "userId"
+    const val AUTHORIZATION = "Authorization"
+    const val SECURITY_KEY = "security_key"
+    const val SECURITY_KEY_VALUE = "fitwithfriend"
+    const val TOKEN = "access_token"
+    const val BEARER = "Bearer "
+    const val SUCCESS_CODE = "200"
+    const val BLOCK_CODE = "402"
+    const val UNAUTHENTICATED = "Unauthenticated."
+
+    const val ARIAL_BLACK_BOLD = "fonts/arial_black_bold.ttf"
+    const val ARIAL_BOLD = "fonts/arial_bold.ttf"
+    const val ARIAL_BOLD_ITALIC = "fonts/arial_bold_italic.ttf"
+    const val ARIAL_ITALIC = "fonts/arial_italic.ttf"
+    const val ARIAL_NARROW = "fonts/arial_narrow.TTF"
+    const val ARIAL_NARROW_BOLD = "fonts/arial_narrow_bold.TTF"
+    const val ARIAL_NARROW_BOLD_ITALIC = "fonts/arial_narrow_bold_italic.TTF"
+    const val ARIAL_NARROW_ITALIC = "fonts/arial_narrow_italic.TTF"
+    const val ARIAL_REGULAR = "fonts/arial_regular.ttf"
+    const val PAPYRUS = "fonts/papey.ttf"
+    const val COPPERPLATE_GOTHIC_BOLD = "fonts/CopperplateGothicBold.ttf"
+    const val COLONNA = "fonts/ColonnaMT.ttf"
+
+
+    const val NOT_INITIALIZED_VALUE = -1
+    const val ZERO_INT_VALUE = 0
+    const val ALERT_DURATION: Long = 2000
+
+    const val ACCEPT = "Accept"
+    const val TYPE = "application/json"
+    const val INFO_FILLED = "infoFilled"
+    const val DASHBOARD = "Dashboard"
+    const val FROM_ACTIVITY = "fromActivity"
+    const val IS_FIRST_TIME = "isFirstTime"
+    const val NULL_OBJECT_ERROR =
+        "Attempt to invoke virtual method 'boolean java.lang.String.equals(java.lang.Object)' on a null object reference"
+    const val TOO_MANY_REQUEST_ERROR =
+        "java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path \$"
+    const val IS_WEIGHT_SELECTED = "isWeightSelected"
+    const val HEIGHT_SELECTED = "HeightSelected"
+
+    const val IS_MALE_SELECTED = "isMaleSelected"
+    const val ACTIVITY_TYPE = "activityType"
+    const val IS_ALL_NOTIFICATION_SELECTED = "isAllNotificationSelected"
+    const val IS_MOTIVATION_ONLY_SELECTED = "isMotivationOnlySelected"
+    const val USER_MODEL = "userModel"
+    const val CHALLENGE_MODEL = "challengeModel"
+    const val PARTICIPANT_MODEL = "participantModel"
+    const val NOTIFICATION_MODEL = "notificationModel"
+    const val EMAIL = "email"
+    const val PASSWORD = "password"
+    const val NOTIFICATION_STATUS = "notificationStatus"
+    const val MOTIVATION_NOTIFICATION_STATUS = "motivationNotificationStatus"
+    const val TAB_POS = "tabPos"
+    const val NETWORK_ERROR =
+        "java.lang.NullPointerException: Attempt to read from field 'java.util.List com.fit_with_friends.fitWithFriends.impl.models.BodyModel.data' on a null object reference"
+}

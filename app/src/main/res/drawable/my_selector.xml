@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:exitFadeDuration="@android:integer/config_shortAnimTime">
+
+    <item android:drawable="@drawable/custom_circle_blue_unfilled" android:state_checked="true" />
+
+    &lt;!&ndash;<item android:state_checked="false"
+        android:drawable="@android:color/white"/>&ndash;&gt;
+
+    &lt;!&ndash;<item android:drawable="@android:color/transparent" />&ndash;&gt;
+
+</selector>-->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:exitFadeDuration="@android:integer/config_shortAnimTime">
+
+    <item android:drawable="@drawable/custom_circle_blue_unfilled" android:state_checked="true" />
+
+    <item android:drawable="@android:color/white" android:state_checked="false" />
+
+    <item android:drawable="@android:color/transparent" />
+
+</selector>

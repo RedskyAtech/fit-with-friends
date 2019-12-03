@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fitWithFriends.ui.fragments.competition.PastChallengesFragment">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefresh_past"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView_past_challenges"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_margin="@dimen/value_five"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <TextView
+            android:id="@+id/textView_no_past_challenges"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginStart="@dimen/value_ten"
+            android:layout_marginEnd="@dimen/value_ten"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="@string/text_no_past_challenges_yet"
+            android:textColor="@color/color_purple"
+            android:textSize="@dimen/text_size_xxxlarge"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+
+    <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/avi_loader_past"
+            style="@style/AVLoadingIndicatorView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            app:indicatorColor="@color/color_purple"
+            app:indicatorName="LineSpinFadeLoaderIndicator"/>
+
+</RelativeLayout>

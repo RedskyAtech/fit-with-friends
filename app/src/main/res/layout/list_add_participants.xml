@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/rLayout_main"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/value_thirty"
+        android:layout_marginEnd="@dimen/value_five"
+        android:background="@drawable/purple_outline_drawable">
+
+    <TextView
+            android:id="@+id/textView_part_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/value_fifteen"
+            android:textSize="@dimen/text_size_xxlarge"
+            android:singleLine="true"
+            android:gravity="center"
+            android:maxLines="1"
+            android:layout_marginEnd="@dimen/value_fifteen"
+            android:layout_toStartOf="@+id/imageView_cross"
+            android:text="@string/text_blank_text"
+            android:textColor="@color/white"
+            tools:ignore="RelativeOverlap"/>
+
+    <ImageView
+            android:id="@+id/imageView_cross"
+            android:layout_width="@dimen/value_twenty"
+            android:layout_height="@dimen/value_twenty"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/cross_white"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/value_ten"
+            android:visibility="gone"
+            android:contentDescription="@string/app_name"/>
+
+</RelativeLayout>

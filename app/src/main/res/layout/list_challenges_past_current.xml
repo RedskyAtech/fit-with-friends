@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/value_five"
+        android:layout_marginStart="@dimen/value_ten"
+        android:layout_marginEnd="@dimen/value_ten"
+        android:background="@drawable/round_grey_outline">
+
+    <RelativeLayout
+            android:id="@+id/rLayout_upper_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/value_five"
+            android:paddingBottom="@dimen/value_five"
+            tools:ignore="UselessParent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageView_user_new"
+                android:layout_width="@dimen/value_eighty"
+                android:layout_height="@dimen/value_eighty"
+                android:layout_marginStart="@dimen/value_ten"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/harry"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/value_fifteen"
+                android:layout_marginEnd="@dimen/value_ten"
+                android:layout_toEndOf="@+id/imageView_user_new"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/textView_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@string/text_blank_text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_xxlarge"/>
+
+            <TextView
+                    android:id="@+id/textView_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:layout_marginTop="@dimen/value_five"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:text="@string/text_blank_text"
+                    android:textSize="@dimen/text_size_large"/>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/value_five"
+                    android:layout_height="@dimen/value_twenty_five"
+                    tools:ignore="DisableBaselineAlignment">
+
+                <TextView
+                        android:id="@+id/textView_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:layout_alignParentEnd="true"
+                        android:singleLine="true"
+                        android:gravity="bottom"
+                        android:layout_alignParentBottom="true"
+                        android:textColor="@color/color_purple"
+                        android:text="@string/text_blank_text"
+                        android:textSize="@dimen/text_size_large"
+                        android:layout_marginBottom="0dp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

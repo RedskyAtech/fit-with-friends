@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/value_five"
+        android:background="@color/white">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView_comment"
+            android:layout_width="@dimen/value_sixty"
+            android:layout_height="@dimen/value_sixty"
+            android:src="@mipmap/harry"
+            android:contentDescription="@string/app_name"/>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/imageView_comment"
+            android:layout_marginStart="@dimen/value_ten">
+
+        <LinearLayout
+                android:id="@+id/layout_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/value_ten"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/rLayout_action"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/textView_comment_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="@string/text_blank_text"
+                    android:textSize="@dimen/text_size_xxlarge"
+                    tools:ignore="RelativeOverlap"/>
+
+            <TextView
+                    android:id="@+id/textView_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/value_five"
+                    android:text="@string/text_blank_text"
+                    android:textSize="@dimen/text_size_xlarge"
+                    tools:ignore="RelativeOverlap"/>
+
+            <TextView
+                    android:id="@+id/textView_comment_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:layout_marginTop="@dimen/value_five"
+                    android:text="@string/text_blank_text"
+                    android:textSize="@dimen/text_size_xlarge"
+                    tools:ignore="RelativeOverlap"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+                android:id="@+id/rLayout_action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_alignParentEnd="true">
+
+            <TextView
+                    android:id="@+id/textView_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_new_edit"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginEnd="@dimen/value_five"
+                    android:textColor="@color/color_purple"
+                    android:textSize="@dimen/text_size_xlarge"
+                    android:visibility="gone"
+                    tools:ignore="RelativeOverlap"/>
+
+            <TextView
+                    android:id="@+id/textView_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView_edit"
+                    android:text="@string/text_delete"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/value_ten"
+                    android:layout_marginEnd="@dimen/value_five"
+                    android:textColor="@color/color_purple"
+                    android:textSize="@dimen/text_size_xlarge"
+                    tools:ignore="RelativeOverlap"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height=".5dp"
+                android:layout_below="@+id/layout_main"
+                android:layout_marginTop="@dimen/value_ten"
+                android:background="@color/gray"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

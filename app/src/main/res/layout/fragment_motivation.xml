@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".fitWithFriends.ui.fragments.motivation.MotivationFragment">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+        <RelativeLayout
+                android:id="@+id/rLayout_header"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/value_header"
+                android:background="@color/color_purple"
+                tools:ignore="UselessParent">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/text_daily_motivation"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_xxxlarge"
+                    tools:ignore="RelativeOverlap"/>
+
+            <RelativeLayout
+                    android:id="@+id/rLayout_notification"
+                    android:layout_width="@dimen/value_forty"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:layout_alignParentEnd="true">
+
+                <ImageView
+                        android:id="@+id/imageView_notification"
+                        android:layout_width="@dimen/value_twenty"
+                        android:layout_height="@dimen/value_twenty"
+                        android:layout_centerInParent="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@mipmap/plus_white"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <android.support.design.widget.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?attr/actionBarSize"
+                app:tabIndicatorColor="@color/color_purple"
+                app:tabIndicatorHeight="3dp"
+                app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"/>
+
+        <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

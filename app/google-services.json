@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "774705984942",
+    "firebase_url": "https://fitwithfriends.firebaseio.com",
+    "project_id": "fitwithfriends",
+    "storage_bucket": "fitwithfriends.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774705984942:android:b5d612c0c0f81300",
+        "android_client_info": {
+          "package_name": "com.fit_with_friends"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "774705984942-rae2uh4e0terk7n1o0seqgrcf1frh2f1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fit_with_friends",
+            "certificate_hash": "046e2c29b551ca82768349120bae519eb15bb7ed"
+          }
+        },
+        {
+          "client_id": "774705984942-su2uhhobjbdi3khjkugrcchur7750mh2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnH3q_uQzR1MHMbadSuMwh08dCUGPjbPM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "774705984942-su2uhhobjbdi3khjkugrcchur7750mh2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

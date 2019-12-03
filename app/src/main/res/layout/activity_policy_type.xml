@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fitWithFriends.ui.activities.policyTypes.PolicyTypeActivity">
+
+    <RelativeLayout
+            android:id="@+id/rLayout_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value_header"
+            android:background="@color/color_purple"
+            tools:ignore="UselessParent">
+
+        <RelativeLayout
+                android:id="@+id/rLayout_back_arrow"
+                android:layout_width="@dimen/value_forty"
+                android:layout_height="match_parent">
+
+            <ImageView
+                    android:layout_width="@dimen/value_twenty"
+                    android:layout_height="@dimen/value_twenty"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/back_white_arrow"/>
+
+        </RelativeLayout>
+
+        <TextView
+                android:id="@+id/textView_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/text_blank_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_xxxlarge"
+                tools:ignore="RelativeOverlap"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rLayout_header">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/textView_policy"
+                    android:layout_width="match_parent"
+                    android:layout_margin="@dimen/value_ten"
+                    android:textSize="@dimen/text_size_xxlarge"
+                    android:text="@string/text_blank_text"
+                    android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

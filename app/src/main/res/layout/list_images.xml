@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="155dp"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/value_five"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="UselessParent">
+
+
+            <ImageView
+                    android:id="@+id/imageView_myFav"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/wight_machine"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/value_five"
+                tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                    android:layout_width="@dimen/value_twenty"
+                    android:layout_height="@dimen/value_twenty"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/calendar_black"/>
+
+            <TextView
+                    android:id="@+id/textView_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_blank_text"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="@dimen/value_fifteen"
+                    android:textSize="@dimen/text_size_xxlarge"
+                    tools:ignore="RelativeOverlap"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/value_five"
+                tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                    android:layout_width="@dimen/value_twenty"
+                    android:layout_height="@dimen/value_twenty"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/weight"/>
+
+            <TextView
+                    android:id="@+id/textView_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_blank_text"
+                    android:layout_marginStart="@dimen/value_fifteen"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_xxlarge"
+                    tools:ignore="RelativeOverlap"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

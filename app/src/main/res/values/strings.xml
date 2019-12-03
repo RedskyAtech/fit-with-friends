@@ -1,0 +1,217 @@
+<resources>
+    <string name="app_name">FitWithFriends</string>
+
+    <!--Crash Report-->
+
+    <string name="crash_dialog_text">An unexpected error occurred forcing the
+        application to stop.Press OK to report the issue.
+    </string>
+    <string name="crash_dialog_ok_toast">Thank you !</string>
+
+    <string-array name="dlg_image_pick">
+        <item>Gallery</item>
+        <item>Camera</item>
+    </string-array>
+
+    <string-array name="dlg_source">
+        <item>Image</item>
+        <item>Video</item>
+    </string-array>
+
+    <string name="text_available">Available</string>
+    <string name="text_unavailable">Unavailable</string>
+
+    <!-- error-->
+    <string name="dlg_choose_image_from">Select image from…</string>
+    <string name="dlg_choose_video">Select Video…</string>
+    <string name="dlg_choose_source_from">Select from…</string>
+    <string name="dlg_wait_please">Please, wait</string>
+
+    <!-- google -->
+    <string name="api_key">AIzaSyDKpkPtlJLZC0KR-p-cvb4QXG_5JtXFL40</string>
+
+    <!--firebase-->
+    <string name="default_notification_channel_id">1</string>
+
+    <!-- fb -->
+    <string name="facebook_app_id">692868124500254</string>
+    <string name="fb_login_protocol_scheme">fb692868124500254</string>
+
+    <string name="text_home">Home</string>
+    <string name="text_fav">My Fav</string>
+    <string name="text_search">Search</string>
+    <string name="text_story">Story</string>
+    <string name="text_me">Me</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="text_email">Email</string>
+    <string name="text_password">Password</string>
+    <string name="text_confirm_password">Confirm Password</string>
+    <string name="text_forgot_password">Forgot Password?</string>
+    <string name="text_forgot_password_new">Forgot Password</string>
+    <string name="text_dont_have_any_account_sign_up">Don\'t have any account?
+        <u>Sign Up</u>
+    </string>
+    <string name="text_name">Name</string>
+    <string name="text_i_accept_the_terms_conditions">I accept the
+        <u>Terms &amp; Conditions</u>
+    </string>
+    <string name="text_sign_up">Sign Up</string>
+    <string name="text_already_have_an_account_sign_in">Already have an account?</string>
+    <string name="text_sign_in_underline">
+        <u>Sign In</u>
+    </string>
+    <string name="text_continue">Continue</string>
+    <string name="text_send">Send</string>
+    <string name="text_new_password">New Password</string>
+    <string name="text_submit">Submit</string>
+    <string name="text_please_enter_your_new_password">Please enter your New Password</string>
+    <string name="text_remember_me">Remember Me</string>
+    <string name="text_sign_in">Sign In</string>
+    <string name="text_we_just_need_your_registered_email_id_to_send_your_password_reset_instructions">We just need your
+        registered Email ID to send your password reset instructions.
+    </string>
+    <string name="text_gender">Gender</string>
+    <string name="text_height">Height</string>
+    <string name="text_weight">Weight</string>
+    <string name="text_date_of_birth">Date of Birth</string>
+    <string name="text_female">Female</string>
+    <string name="text_male">Male</string>
+    <string name="text_meters">meters</string>
+    <string name="text_cm">cm</string>
+    <string name="text_lbs">lbs</string>
+    <string name="text_kg">kg</string>
+    <string name="text_ok">OK</string>
+    <string name="text_alert">Alert</string>
+    <string name="text_small_cancel">Cancel</string>
+    <string name="text_are_you_sure_to_logout">Are you sure you want to logout?</string>
+    <string name="text_we_have_sent_a_link_to_your_email_please_check_your_email_and_click_on_the_link">We have sent a
+        link to your email. \n Please check your email and click on the link.
+    </string>
+    <string name="text_your_password_has_been_changed_successfully">Your password has been changed successfully.
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_leader_board">Leader Board</string>
+    <string name="text_there_is_currently_no_challenges">There is currently no challenges</string>
+    <string name="text_today_s_weight">Today\'s Weight:</string>
+    <string name="text_today_s_weight_new">Today\'s Weight</string>
+    <string name="text_add">
+        <u>Add</u>
+    </string>
+    <string name="text_please_enter_your_today_s_weight">Please enter your today\'s weight</string>
+    <string name="text_notifications">Notifications</string>
+    <string name="text_you_currently_don_t_have_any_notifications">You currently don\'t have any Notifications.</string>
+    <string name="text_view_weight_log">View Weight Log</string>
+    <string name="text_edit_profile">Edit Profile</string>
+    <string name="text_change_password">Change Password</string>
+    <string name="text_refer_your_friends">Refer your Friends</string>
+    <string name="text_about_us">About Us</string>
+    <string name="text_privacy_policy">Privacy Policy</string>
+    <string name="text_terms_conditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="text_logout">Logout</string>
+    <string name="text_my_account">My Account</string>
+    <string name="text_please_add_your_today_s_weight">Please add your today\'s weight.</string>
+    <string name="text_detail">Detail</string>
+    <string name="text_challenge_name">Challenge Name:</string>
+    <string name="text_start_date">Start Date:</string>
+    <string name="text_end_date">End Date:</string>
+    <string name="text_your_ranking">Your Ranking:</string>
+    <string name="text_body_weight">Body Weight:</string>
+    <string name="text_no_of_participants">No. of Participants:</string>
+    <string name="text_see_all">
+        <u>See all</u>
+    </string>
+    <string name="text_description">Description</string>
+    <string name="text_competitions">Competitions</string>
+    <string name="text_find_challengers">Find Challengers</string>
+    <string name="text_daily_motivation">Daily Motivation</string>
+    <string name="text_invite">Invite</string>
+    <string name="text_add_message_optional">Add message(optional)</string>
+    <string name="text_who_would_you_like_to_connect_with">Who would you like to connect with?</string>
+    <string name="text_phone_contact">Phone Contacts</string>
+    <string name="text_enter_email_address">Enter Email Address</string>
+    <string name="text_images">Images:</string>
+    <string name="text_create_challenge">Create Challenge</string>
+    <string name="text_enter_challenge_name">Enter Challenge Name</string>
+    <string name="text_challenge_name_new">Challenge Name</string>
+    <string name="text_base_weight">Base Weight</string>
+    <string name="text_enter_your_weight">Enter Your Weight</string>
+    <string name="text_start_date_new">Start Date</string>
+    <string name="text_select">Select</string>
+    <string name="text_end_date_new">End Date</string>
+    <string name="text_add_a_photo">Add a Photo</string>
+    <string name="text_upload_photo">Upload Photo</string>
+    <string name="text_add_participants">Add Participants</string>
+    <string name="text_description_new">Description</string>
+    <string name="text_write_here">Write Here.....</string>
+    <string name="text_blank_text"/>
+    <string name="text_allow_all_notifications">Allow all notifications</string>
+    <string name="text_daily_motivation_only">Daily Motivation only</string>
+    <string name="text_update">Update</string>
+    <string name="text_old_password">Old Password</string>
+    <string name="text_weight_log">Weight Log</string>
+    <string name="text_month">Month</string>
+    <string name="text_month_underline">
+        <u>Month</u>
+    </string>
+    <string name="text_year">Year</string>
+    <string name="text_year_underline">
+        <u>Year</u>
+    </string>
+    <string name="text_day">Days</string>
+    <string name="text_comments">Comments</string>
+    <string name="text_type_your_message_here">Type your message here.....</string>
+    <string name="text_accept">
+        <u>Accept</u>
+    </string>
+    <string name="text_reject">
+        <u>Reject</u>
+    </string>
+    <string name="text_cancel">Cancel</string>
+    <string name="text_challenge">CHALLENGE</string>
+    <string name="text_days_left">DAYS LEFT</string>
+    <string name="text_admin">Admin</string>
+    <string name="text_place">PLACE</string>
+    <string name="text_save">Save</string>
+    <string name="text_upload_pic">Upload Pic</string>
+    <string name="text_create">Create</string>
+    <string name="text_please_enter_your_weight_today">Please enter your weight today.</string>
+    <string name="text_no_invites_yet">No invites yet!</string>
+    <string name="text_no_connections_yet">No connections yet!</string>
+    <string name="text_no_challenges_yet">No challenges yet!</string>
+    <string name="text_no_current_challenges_yet">No current challenges yet!</string>
+    <string name="text_no_past_challenges_yet">No past challenges yet!</string>
+    <string name="text_no_comments_yet">No comments yet!</string>
+    <string name="text_upload">Upload</string>
+    <string name="text_gallery">Gallery</string>
+    <string name="text_camera">Camera</string>
+    <string name="text_add_weight">Add Weight</string>
+    <string name="text_no_today_s_motivation_yet">No today\'s motivation yet!</string>
+    <string name="text_no_yesterday_s_motivation_yet">No yesterday\'s motivation yet!</string>
+    <string name="text_sent">Sent</string>
+    <string name="text_friends">Friends</string>
+    <string name="text_referral_code">Referral Code</string>
+    <string name="text_feet">feet</string>
+    <string name="text_inches">inches</string>
+    <string name="text_ft">ft</string>
+    <string name="text_in">in</string>
+    <string name="text_edit">
+        <u>Edit</u>
+    </string>
+    <string name="text_change">
+        <u>Change</u>
+    </string>
+    <string name="text_collective_body_weight">Collective Body Weight:</string>
+    <string name="text_m">m</string>
+    <string name="text_weight_in_lbs">Weight in Lbs</string>
+    <string name="text_delete">
+        <u>Delete</u>
+    </string>
+    <string name="text_new_edit">
+        <u>Edit</u>
+    </string>
+    <string name="text_resend">Resend</string>
+
+</resources>

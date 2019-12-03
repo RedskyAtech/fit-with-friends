@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="color_purple">#44459c</color>
+    <color name="theme_color">#22599A</color>
+    <color name="color_light_sky_blue">#AEC6F9</color>
+    <color name="light_sky_blue">#18a5ff</color>
+    <color name="selected_background_icon">#D7E4FD</color>
+    <color name="nav_item_state_list">#FF4081</color>
+    <color name="red_color">#FF3600</color>
+    <color name="color_blue_light">#5492F7</color>
+    <color name="color_slight_blue_light">#BCE0FD</color>
+    <color name="color_skyBlue">#6B97F0</color>
+    <color name="light_grey">#F1F2F3</color>
+    <color name="dark_grey">#707070</color>
+    <color name="color_light_grey">#67696C</color>
+    <color name="light_grey_background">#EFEFF4</color>
+    <color name="color_comments_color">#D3DDEC</color>
+    <color name="light_grey_prescription">#EBEBEB</color>
+    <color name="background_patient">#F8F9FA</color>
+    <color name="star_color">#25B8E2</color>
+    <color name="color_light_gray">#EEEEEE</color>
+    <color name="color_white">#ffffff</color>
+    <color name="color_hex_color">#59BDEB</color>
+    <color name="color_green">#06A883</color>
+    <color name="color_sea_green">#488B9C</color>
+    <color name="color_orange">#F47D02</color>
+    <color name="color_light_orange">#EE6C58</color>
+    <color name="color_yellow">#F7CD46</color>
+    <color name="color_black">#000000</color>
+    <color name="color_blue">#6291EF</color>
+    <color name="color_gray">#949494</color>
+    <color name="grayed_color">#818181</color>
+    <color name="text_grayed_color">#93979B</color>
+    <color name="green_color">#478B9C</color>
+    <color name="color_green_success">#6AC259</color>
+    <color name="dark_gray">#AAB7B8</color>
+    <color name="button_filled_color">#EAEDED</color>
+    <color name="button_yellow">#FAD000</color>
+    <color name="button_light_blue">#AEC6F9</color>
+    <color name="light_green">#B1DD8C</color>
+    <color name="light_green_text_pharmacy">#76BB40</color>
+    <color name="dark_blue">#22222F</color>
+    <color name="dark_black">#1A1A1A</color>
+    <color name="text_pharmacy">#BBB6B6</color>
+    <color name="light_orange">#F0A478</color>
+    <color name="light_peach">#F7D9CE</color>
+    <color name="light_sky">#D4E4FE</color>
+    <color name="green">#709250</color>
+    <color name="gray">#C4C4C4</color>
+    <color name="text_gray">#555555</color>
+    <color name="background_specialities">#F1F9FF</color>
+    <color name="text_color_blue">#2699FB</color>
+    <color name="color_check_green">#B9DA94</color>
+    <color name="color_golden">#EC9536</color>
+    <color name="color_five_star">#58b451</color>
+
+    <color name="text_blue_header">#318DD0</color>
+    <color name="text_navy_blue">#4097D1</color>
+    <color name="axon_black_text">#212121</color>
+    <color name="title_bar_color">#CC141313</color>
+    <color name="text_color">#919191</color>
+    <color name="selected_blue_theme">#d1f6fc</color>
+    <color name="color_light_black">#919191</color>
+    <color name="background_light_grey">#F8F9F8</color>
+
+    <color name="color_pink">#FFC0CB</color>
+    <color name="color_lightpink">#FFB6C1</color>
+    <color name="color_hotpink">#FF69B4</color>
+    <color name="color_deeppink">#FF1493</color>
+    <color name="color_prescriptionDetail">#EBEBEB</color>
+
+    <!--Translucent colors-->
+    <color name="color_trans_black">#96000000</color>
+    <color name="color_editText_grey">#D8D8D8</color>
+    <color name="color_green_light">#54c8a9</color>
+
+    <color name="text_selected">#FFF</color>
+    <color name="text_focused">#FFF</color>
+    <color name="text_default">#FFF</color>
+    <color name="text_hint_default">#FFF</color>
+    <color name="line_selected">#FFF</color>
+    <color name="line_focused">#FFF</color>
+    <color name="line_default">#FFF</color>
+
+    <color name="gplus_color_1">#9932CC</color>
+    <color name="gplus_color_2">#b23424</color>
+    <color name="gplus_color_3">#f4b400</color>
+
+    <integer-array name="gplus_colors">
+        <item>@color/gplus_color_1</item>
+        <item>@color/gplus_color_2</item>
+        <item>@color/gplus_color_3</item>
+    </integer-array>
+
+    <!--graph colour-->
+    <color name="plot_background">#44459c</color>
+    <color name="off_white_plot">#EEE</color>
+    <color name="dark_green">#5b915b</color>
+
+</resources>

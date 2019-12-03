@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fitWithFriends.ui.activities.challenge.ParticipantDetailsActivity">
+
+    <RelativeLayout
+            android:id="@+id/rLayout_header"
+            android:layout_width="match_parent"
+            android:background="@color/color_purple"
+            android:layout_height="@dimen/value_header">
+
+        <RelativeLayout
+                android:id="@+id/rLayout_back_arrow"
+                android:layout_width="@dimen/value_forty"
+                android:layout_height="match_parent">
+
+            <ImageView
+                    android:layout_width="@dimen/value_twenty"
+                    android:layout_height="@dimen/value_twenty"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/back_white_arrow"/>
+
+        </RelativeLayout>
+
+        <TextView
+                android:id="@+id/textView_header_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/text_blank_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_xxxlarge"/>
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rLayout_header">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imageView_participant"
+                    android:layout_width="@dimen/value_image_size"
+                    android:layout_height="@dimen/value_image_size"
+                    android:layout_marginTop="@dimen/value_thirty"
+                    android:src="@mipmap/harry"
+                    android:layout_gravity="center_horizontal"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/value_thirty"
+                    android:layout_marginBottom="@dimen/value_ten"
+                    android:layout_marginStart="@dimen/value_ten"
+                    android:layout_marginEnd="@dimen/value_ten"
+                    android:orientation="vertical"
+                    tools:ignore="UselessParent">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/value_ten">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/text_challenge_name"
+                                android:layout_centerVertical="true"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size_xxlarge"
+                                tools:ignore="RelativeOverlap"/>
+
+                        <TextView
+                                android:id="@+id/textView_challenge_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/text_blank_text"
+                                android:layout_centerVertical="true"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size_xxlarge"
+                                tools:ignore="RelativeOverlap"
+                                android:layout_alignParentEnd="true"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/value_ten">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/text_start_date"
+                                android:layout_centerVertical="true"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size_xxlarge"
+                                tools:ignore="RelativeOverlap"/>
+
+                        <TextView
+                                android:id="@+id/textView_start_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/text_blank_text"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size_xxlarge"
+                                tools:ignore="RelativeOverlap"
+                                android:layout_alignParentEnd="true" android:layout_alignParentBottom="true"
+                                android:layout_marginBottom="0dp"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/value_ten">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/text_end_date"
+                                android:layout_centerVertical="true"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size_xxlarge"
+                                tools:ignore="RelativeOverlap"/>
+
+                        <TextView
+                                android:id="@+id/textView_end_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/text_blank_text"
+                                android:layout_centerVertical="true"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size_xxlarge"
+                                tools:ignore="RelativeOverlap"
+                                android:layout_alignParentEnd="true"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/value_ten">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/text_your_ranking"
+                                android:layout_centerVertical="true"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size_xxlarge"
+                                tools:ignore="RelativeOverlap"/>
+
+                        <TextView
+                                android:id="@+id/textView_ranking"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/text_blank_text"
+                                android:layout_centerVertical="true"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size_xxlarge"
+                                tools:ignore="RelativeOverlap"
+                                android:layout_alignParentEnd="true"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/value_ten">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/text_body_weight"
+                                android:layout_centerVertical="true"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size_xxlarge"
+                                tools:ignore="RelativeOverlap"/>
+
+                        <TextView
+                                android:id="@+id/textView_weight_loss"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/text_blank_text"
+                                android:layout_centerVertical="true"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size_xxlarge"
+                                tools:ignore="RelativeOverlap"
+                                android:layout_alignParentEnd="true"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/value_ten">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/text_images"
+                                android:layout_centerVertical="true"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size_xxlarge"
+                                tools:ignore="RelativeOverlap"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerView_participants_images"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/value_five"/>
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <TextView
+                            android:id="@+id/textView_see_all_images"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_see_all"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/color_purple"
+                            android:textSize="@dimen/text_size_xxlarge"
+                            android:visibility="gone"
+                            tools:ignore="RelativeOverlap"
+                            android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

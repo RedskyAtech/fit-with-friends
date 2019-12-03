@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".fitWithFriends.ui.activities.home.DashboardActivity">
+
+    <FrameLayout
+            android:id="@+id/frame_layout_dashboard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:visibility="gone"
+            android:layout_above="@+id/bottom_layout"/>
+
+    <LinearLayout
+            android:id="@+id/bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value_header"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_light_gray"
+            android:visibility="gone"
+            android:weightSum="5"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+        <RelativeLayout
+                android:id="@+id/rLayout_home"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+            <ImageView
+                    android:id="@+id/imageView_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/app_name"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/rLayout_competition"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_weight="1">
+
+            <ImageView
+                    android:id="@+id/imageView_competition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/value_seven"
+                    android:contentDescription="@string/app_name"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/rLayout_motivation"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+            <ImageView
+                    android:id="@+id/imageView_motivation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/app_name"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/rLayout_challenge"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+            <ImageView
+                    android:id="@+id/imageView_challenge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/app_name"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/rLayout_user"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+            <ImageView
+                    android:id="@+id/imageView_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/app_name"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+            android:id="@+id/rLayout_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:background="@drawable/home_walkthrough"/>
+
+</RelativeLayout>

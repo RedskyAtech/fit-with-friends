@@ -1,0 +1,77 @@
+package com.fit_with_friends.fitWithFriends.views.maskedimageview;
+
+import android.content.Context;
+import android.content.res.TypedArray;
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.graphics.PorterDuff;
+import android.graphics.PorterDuffXfermode;
+import android.graphics.Rect;
+import android.graphics.RectF;
+import android.graphics.drawable.Drawable;
+import android.util.AttributeSet;
+import android.view.InflateException;
+import com.fit_with_friends.R;
+import com.fit_with_friends.fitWithFriends.utils.Constants;
+
+
+public class MaskedImageView extends android.support.v7.widget.AppCompatImageView {
+
+    private Paint maskedPaint;
+    private Paint copyPaint;
+    private Drawable maskDrawable;
+    int maskResourceId;
+    private Rect boundsRect;
+    private RectF boundsRectF;
+
+    public MaskedImageView(Context context) {
+        this(context, null);
+    }
+
+    public MaskedImageView(Context context, AttributeSet attrs) {
+        super(context, attrs);
+        init(attrs);
+    }
+
+    private void init(AttributeSet attrs) {
+        maskResourceId = -1;
+        TypedArray array = getContext().getTheme().obtainStyledAttributes(attrs, R.styleable.MaskedImageView,
+                Constants.ZERO_INT_VALUE, Constants.ZERO_INT_VALUE);
+
+        try {
+            maskResourceId = array.getResourceId(R.styleable.MaskedImageView_mask, -1);
+        } finally {
+            array.recycle();
+        }
+
+        if (maskResourceId < Constants.ZERO_INT_VALUE) {
+            throw new InflateException("Mandatory 'mask' attribute not set!");
+        }
+
+        maskedPaint = new Paint();
+        maskedPaint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_ATOP));
+
+        copyPaint = new Paint();
+        maskDrawable = getResources().getDrawable(maskResourceId);
+    }
+
+    protected void onSizeChanged(int width, int height, int oldWidth, int oldHeight) {
+        boundsRect = new Rect(Constants.ZERO_INT_VALUE, Constants.ZERO_INT_VALUE, width, height);
+        boundsRectF = new RectF(boundsRect);
+    }
+
+    @Override
+    protected void onDraw(Canvas canvas) {
+        int sc = canvas.saveLayer(boundsRectF, copyPaint,
+                Canvas.ALL_SAVE_FLAG | Canvas.ALL_SAVE_FLAG);
+
+        maskDrawable.setBounds(boundsRect);
+        maskDrawable.draw(canvas);
+
+        canvas.saveLayer(boundsRectF, maskedPaint, Constants.ZERO_INT_VALUE);
+
+        super.onDraw(canvas);
+
+        canvas.restoreToCount(sc);
+    }
+}

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/value_five"
+        android:background="@drawable/round_grey_outline">
+
+    <RelativeLayout
+            android:id="@+id/rLayout_upper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/value_five"
+            tools:ignore="UselessParent">
+
+        <RelativeLayout
+                android:id="@+id/rLayout_user_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/value_ten"
+                android:layout_toStartOf="@+id/imageView_share">
+
+            <RelativeLayout
+                    android:id="@+id/rLayout_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_colored_outline">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imageView_user_new"
+                        android:layout_width="@dimen/value_sixty"
+                        android:layout_height="@dimen/value_sixty"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/value_five"
+                        android:src="@mipmap/harry"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/value_fifteen"
+                    android:layout_toEndOf="@+id/rLayout_user"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:id="@+id/textView_challenge_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="@string/text_blank_text"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_xxlarge"/>
+
+                <TextView
+                        android:id="@+id/textView_user_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:text="@string/text_blank_text"
+                        android:textSize="@dimen/text_size_large"/>
+
+                <TextView
+                        android:id="@+id/textView_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_purple"
+                        android:text="@string/text_blank_text"
+                        android:textSize="@dimen/text_size_large"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ImageView
+                android:id="@+id/imageView_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/share"
+                android:padding="@dimen/value_ten"
+                tools:ignore="RelativeOverlap"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+            android:id="@+id/layout_challenge_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_outline"
+            android:gravity="center"
+            android:paddingTop="@dimen/value_twenty"
+            android:paddingBottom="@dimen/value_twenty"
+            android:layout_marginTop="@dimen/value_ten"
+            android:layout_below="@+id/rLayout_upper"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            tools:ignore="DisableBaselineAlignment">
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:ignore="UselessParent">
+
+            <TextView
+                    android:id="@+id/textView_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:text="@string/text_blank_text"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_size_xxlarge"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/color_purple"
+                    android:text="@string/text_challenge"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_size_large"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:ignore="UselessParent">
+
+            <TextView
+                    android:id="@+id/textView_days_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:text="@string/text_blank_text"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_size_xxlarge"/>
+
+            <TextView
+                    android:id="@+id/textView_days_left"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/color_purple"
+                    android:text="@string/text_days_left"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_size_large"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                tools:ignore="UselessParent">
+
+            <TextView
+                    android:id="@+id/textView_rank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:text="@string/text_blank_text"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_size_xxlarge"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/color_purple"
+                    android:text="@string/text_place"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_size_large"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+apply plugin: 'application'
+apply plugin: 'java'
+
+mainClassName = "com.fit_with_friends.fitWithFriends.FitWithFriendsGenerator"
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation files('libs/greendao-generator-2.1.0.jar')
+    implementation files('libs/freemarker-2.3.23.jar')
+}
